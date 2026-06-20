@@ -2,18 +2,22 @@
 __pycache__/
 *.py[cod]
 *.pyo
-*.pyd
-.env
-*.egg-info/
-dist/
-build/
 venv/
 .venv/
 env/
+*.egg-info/
+dist/
+build/
 
-# Models (large files - commit separately or use LFS)
+# Models - large binary files
 backend/models/*.pkl
-train/models/*.pkl
+
+# Environment secrets - NEVER commit these
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env.local
 
 # Node
 node_modules/
@@ -21,14 +25,6 @@ node_modules/
 out/
 .vercel/
 *.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Environment
-.env
-.env.local
-.env.*.local
 
 # OS
 .DS_Store
@@ -39,4 +35,3 @@ Thumbs.db
 
 # Data
 *.csv
-data/

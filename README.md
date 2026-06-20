@@ -173,7 +173,7 @@ pip install -r requirements.txt
 
 Copy and fill environment:
 ```bash
-cp .env .env
+cp .env.example .env
 # Edit .env with your Neon DATABASE_URL
 ```
 
@@ -200,7 +200,7 @@ python train_model.py
 cd ../frontend
 npm install
 
-cp .env .env.local
+cp .env.example .env.local
 # NEXT_PUBLIC_API_URL=http://localhost:8000
 
 npm run dev
